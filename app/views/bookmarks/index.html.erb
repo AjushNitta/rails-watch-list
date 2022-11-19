@@ -1,0 +1,8 @@
+<h3>Add a movie to your <%= @list.name %> list</h3>
+ <% @lists.each do |list|%>
+    <li><%=link_to list.name, list_path(list) %></li>
+  <% end %>
+
+   <%= f.submit class: "btn btn-flat" %>
+     <%= link_to "Add a new list", new_list_path, class: 'btn btn-primary' %>
+  <% end %>
