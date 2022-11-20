@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('/assets/moviebanner.jpg');">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://res.cloudinary.com/dqgi8zznw/image/upload/v1668979466/nap180lhnoqvfx9xfxhq.avif');">
   <div class="container">
     <h1>Watch List</h1>
 
@@ -38,7 +38,7 @@
 
 <div class="cards">
   <% @lists.each do |list|%>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/assets/moviecategory.jpg')">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://res.cloudinary.com/dqgi8zznw/image/upload/v1668983162/jgmrvibvu5inxzrp4kil.jpg')">
       <%=link_to list.name, list_path(list) %>
     </div>
   <% end %>
