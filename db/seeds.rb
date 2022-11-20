@@ -20,3 +20,9 @@ puts 'creating movies'
     rating: rand(1..5)
   )
 end
+
+10.times do
+  List.create(
+    name: Faker::Music.genre
+  )
+end
